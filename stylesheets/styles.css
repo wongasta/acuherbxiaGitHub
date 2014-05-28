@@ -1,0 +1,1259 @@
+@font-face {
+  font-family: 'league_gothicregular';
+  src: url("../fonts/leaguegothic-regular-webfont-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont-webfont.svg#league_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo300';
+  src: url("../fonts/museo300-regular-webfont.eot");
+  src: url("../fonts/museo300-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo300-regular-webfont.woff") format("woff"), url("../fonts/museo300-regular-webfont.ttf") format("truetype"), url("../fonts/museo300-regular-webfont.svg#museo300") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo700';
+  src: url("../fonts/museo700-regular-webfont.eot");
+  src: url("../fonts/museo700-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo700-regular-webfont.woff") format("woff"), url("../fonts/museo700-regular-webfont.ttf") format("truetype"), url("../fonts/museo700-regular-webfont.svg#museo700") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'black_roseregular';
+  src: url("../fonts/blackr1-webfont.eot");
+  src: url("../fonts/blackr1-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blackr1-webfont.woff") format("woff"), url("../fonts/blackr1-webfont.ttf") format("truetype"), url("../fonts/blackr1-webfont.svg#black_roseregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 50, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mobileOnly {
+  display: none;
+}
+
+/* line 54, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.desktopOnly {
+  display: inline;
+}
+
+/* line 58, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.myHidden {
+  display: none;
+}
+
+/* line 62, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.solid {
+  opacity: 1;
+}
+
+/* line 66, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+a.tdflip {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -o-perspective: 600px;
+  -ms-perspective: 600px;
+  perspective: 600px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+/* line 82, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+a.tdflip span {
+  display: block;
+  position: relative;
+  padding: 0 2px;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 103, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+a.tdflip:hover span {
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -o-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  transform: translate3d(50px, 0px, -30px) rotateX(90deg);
+}
+
+/* line 111, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+a.tdflip span:after {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 2px;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -o-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+/* line 132, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.redText {
+  color: #5b2626;
+}
+
+/* line 136, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.blueText {
+  color: #172b4a;
+}
+
+/* line 141, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+body {
+  background-image: url(../images/para.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  color: #202020;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+/* line 152, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop {
+  background: #FFF;
+  height: 60px;
+  border: none;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+/* line 159, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav {
+  font-family: league_gothicregular, arial;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+/* line 167, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .menuToggle a {
+  color: #fff;
+  font-family: league_gothicregular, arial;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  text-decoration: none;
+}
+/* line 176, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .menuToggle a:hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #bcdf94;
+}
+/* line 181, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .menuToggle .toggleContainer {
+  background: rgba(0, 0, 0, 0.7);
+  width: 55px;
+  padding: 10px 5px 0 5px;
+  margin-top: -8px;
+  height: 60px;
+}
+/* line 190, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .navbar-nav {
+  margin-left: 10px;
+}
+/* line 193, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .navbar-nav a {
+  color: #202020;
+}
+/* line 197, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .mainNav .navbar-nav a:hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #105231;
+}
+/* line 206, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .container {
+  height: 100%;
+  box-sizing: border-box;
+  width: 90%;
+}
+/* line 211, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .container .logoContainer {
+  padding-top: 7px;
+  width: 200px;
+}
+/* line 215, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.mainNavTop .container .logoContainer img {
+  width: 200px;
+}
+
+/* line 224, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 230, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.allcontainer {
+  background-image: url(../images/port.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 60px;
+}
+/* line 237, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.allcontainer .subContainer {
+  min-height: 500px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 15px;
+  overflow-x: hidden;
+}
+/* line 244, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.allcontainer .subContainer h3.subTitle {
+  font-family: black_roseregular;
+  text-transform: lowercase;
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+}
+/* line 253, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.allcontainer .backToTop {
+  text-align: center;
+  margin-top: 20px;
+  height: 45px;
+}
+/* line 258, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.allcontainer .backToTop a {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  color: #FFF;
+  margin: 0 auto;
+  font-family: museo700;
+}
+
+/* line 269, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top {
+  height: 650px;
+}
+/* line 272, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .textHolder {
+  margin-top: 50px;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 10%;
+}
+/* line 278, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .textHolder h1, #top .textHolder h2, #top .textHolder h3 {
+  font-family: museo700;
+  color: #232323;
+  margin: 3px 0;
+}
+/* line 284, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .textHolder .bigF {
+  font-size: 70px;
+}
+/* line 288, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .textHolder .midF {
+  font-size: 37px;
+}
+/* line 292, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .textHolder .smlF {
+  font-size: 25px;
+  margin: 10px 0;
+}
+/* line 298, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  width: 80%;
+  height: 290px;
+  padding: 11px;
+  text-align: center;
+}
+/* line 309, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder p {
+  margin: 3px;
+  font-size: 12px;
+}
+/* line 314, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder .apptHeader, #top .apptHolder .apptNumber {
+  font-family: museo700;
+  color: #232323;
+  font-size: 25px;
+  margin: 3px 0;
+}
+/* line 321, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder .apptNumber {
+  font-size: 30px;
+}
+/* line 326, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder .locHeader {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 331, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#top .apptHolder .openCol {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* line 342, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about {
+  border-top: 10px solid #67a7c5;
+  background: #d0ebf7;
+  padding-top: 20px;
+}
+/* line 347, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .contentContainer {
+  min-height: 400px;
+}
+/* line 351, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .navMenu {
+  padding-top: 20px;
+}
+/* line 354, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .navMenu li {
+  margin: 10px 0;
+}
+/* line 357, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .navMenu li a {
+  background: rgba(9, 41, 56, 0.8);
+  font-family: museo700;
+  font-size: 28px;
+  color: #FFF;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* line 366, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .navMenu li a:hover span, #about .navMenu li a span:after {
+  background: #842513;
+  color: #FFF;
+}
+/* line 375, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv {
+  background: rgba(9, 41, 56, 0.8);
+  padding: 15px;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: museo300;
+  font-size: 18px;
+}
+/* line 383, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv .svcContainer {
+  background: #4f8e8f;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+/* line 389, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv .svcContainer .serviceHeader, #about .textContainer .contentDiv .svcContainer .serviceOfferedHeader, #about .textContainer .contentDiv .svcContainer .insuranceHeader {
+  font-family: museo300;
+}
+/* line 393, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv .svcContainer .serviceHeader {
+  font-size: 26px;
+}
+/* line 397, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv .svcContainer .serviceOfferedHeader, #about .textContainer .contentDiv .svcContainer .insuranceHeader {
+  font-size: 18px;
+  margin: 10px 0;
+}
+/* line 403, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv h4 {
+  font-family: black_roseregular;
+  font-size: 40px;
+  text-transform: lowercase;
+}
+/* line 409, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv img {
+  width: 100%;
+}
+/* line 413, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#about .textContainer .contentDiv .caption {
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* line 423, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory {
+  border-top: 10px solid #70a247;
+  background: rgba(55, 80, 35, 0.8);
+}
+/* line 427, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .subTitle {
+  color: #FFF;
+}
+/* line 431, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .contentContainer {
+  box-sizing: border-box;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+/* line 436, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .contentContainer .theoryContainer {
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  min-height: 400px;
+  padding: 15px;
+  font-size: 18px;
+  font-family: museo300;
+}
+/* line 444, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .contentContainer .theoryContainer h4 {
+  font-family: black_roseregular;
+  text-transform: lowercase;
+  font-size: 35px;
+  margin: 0 0 10px 0;
+}
+/* line 453, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .itemSelector {
+  text-align: center;
+}
+/* line 456, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .itemSelector li {
+  display: inline;
+  margin: 0 0.5%;
+}
+/* line 461, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .itemSelector li a img {
+  width: 30%;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 469, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .itemSelector li a:hover img {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 476, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .restTheories {
+  text-align: center;
+  padding: 15px 0;
+}
+/* line 481, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .restTheories a img {
+  width: 85%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 487, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theory .restTheories a:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 495, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments {
+  border-top: 10px solid #dfab3c;
+  background: #FFF;
+}
+/* line 499, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .contentContainer {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 503, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .contentContainer .boxy {
+  background: #e9cbc8;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 220px;
+  min-height: 380px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+/* line 516, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .contentContainer .boxy a {
+  color: #2b6571;
+}
+/* line 520, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .contentContainer .boxy a:hover {
+  color: #458491;
+  text-decoration: none;
+}
+/* line 525, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .contentContainer .boxy h3 {
+  font-family: museo700;
+  font-size: 18px;
+}
+/* line 532, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .treatmentsRest {
+  text-align: center;
+  padding: 15px 0;
+}
+/* line 537, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .treatmentsRest a img {
+  width: 400px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 543, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatments .treatmentsRest a:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 552, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact {
+  border-top: 10px solid #da7f63;
+  background: #762810;
+  color: #FFF;
+}
+/* line 557, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .subTitle {
+  color: #FFF;
+}
+/* line 561, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .mapContainer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0;
+  background: #FFF;
+  border-radius: 20px;
+  min-height: 300px;
+  color: #000;
+}
+/* line 571, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .mapContainer h4 {
+  font-family: museo700;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 577, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .mapContainer iframe {
+  width: 100%;
+}
+/* line 581, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .mapContainer .openCol {
+  text-align: center;
+}
+/* line 586, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo {
+  padding-left: 15px;
+}
+/* line 589, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo h3 {
+  font-family: museo700;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+/* line 595, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo h4 {
+  font-family: museo700;
+  font-size: 24px;
+  color: #d9b1a5;
+}
+/* line 601, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialHeader {
+  margin-top: 35px;
+}
+/* line 605, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialContainer {
+  text-align: center;
+}
+/* line 610, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialContainer a img {
+  width: 90%;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 618, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialContainer a:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 623, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialContainer .fb-like {
+  margin: 0 auto;
+}
+/* line 628, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialButtons {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 140px;
+  text-align: center;
+}
+/* line 636, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialButtons li {
+  margin: 15px 0;
+}
+/* line 640, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialButtons li:nth-child(2) {
+  padding-left: 10%;
+}
+/* line 644, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#contact .contactInfo .socialButtons li:last-child {
+  padding-left: 30%;
+}
+
+/* line 652, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer {
+  background: #202020;
+  min-height: 200px;
+  border-top: 10px solid #494949;
+  color: #FFF;
+  padding: 20px 15px 30px 15px;
+  box-sizing: border-box;
+}
+/* line 660, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv, #footer .rightDiv {
+  font-size: 14px;
+}
+/* line 663, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv p, #footer .rightDiv p {
+  margin: 3px 0;
+}
+/* line 667, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv .copyright, #footer .rightDiv .copyright {
+  padding-top: 15px;
+}
+/* line 671, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv h4, #footer .rightDiv h4 {
+  font-family: museo300;
+  font-size: 18px;
+}
+/* line 676, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv .smallSocialIcons, #footer .rightDiv .smallSocialIcons {
+  margin-bottom: 15px;
+}
+/* line 680, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .leftDiv .smallSocialIcons a img, #footer .rightDiv .smallSocialIcons a img {
+  width: 30px;
+}
+/* line 687, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#footer .rightDiv {
+  text-align: right;
+}
+
+/* line 694, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer {
+  overflow: hidden;
+  min-height: 800px;
+  position: relative;
+}
+/* line 699, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft {
+  padding: 0;
+  position: relative;
+  top: 0px;
+}
+/* line 704, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul {
+  box-sizing: border-box;
+}
+/* line 707, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul .header {
+  font-family: black_roseregular;
+  color: #FFF;
+  font-size: 30px;
+  text-transform: lowercase;
+  background: #286061;
+  border-top: 10px solid #88b2b3;
+  padding: 6px;
+  margin-bottom: 0;
+  text-align: center;
+}
+/* line 719, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul li {
+  width: 100%;
+  display: block;
+}
+/* line 723, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul li ul {
+  padding-left: 0;
+}
+/* line 727, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul li ul li a {
+  font-size: 13px;
+  padding: 3px 0px 3px 40px;
+}
+/* line 734, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul li a {
+  font-family: museo300;
+  font-size: 15px;
+  color: #FFF;
+  width: 97%;
+  display: block;
+  padding: 6px 5px;
+}
+/* line 743, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colLeft ul li a:hover {
+  text-decoration: none;
+  background: #FFF;
+  color: #333333;
+}
+/* line 751, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colRight {
+  background: #b9d5d6;
+  min-height: 1200px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* line 758, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colRight h1 {
+  font-family: museo700;
+  color: #0f3d3e;
+  font-size: 30px;
+}
+/* line 764, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colRight h2 {
+  font-family: museo700;
+  color: #0f3d3e;
+  font-size: 30px;
+  padding-top: 50px;
+}
+/* line 771, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+.subpageContainer .colRight .firstP:first-letter {
+  font-family: black_roseregular;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+/* line 779, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theoryDetails {
+  background: #194647;
+}
+/* line 782, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theoryDetails .colLeft {
+  background: #194647;
+}
+/* line 787, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theoryDetails .colLeft ul .header {
+  background: #286061;
+  border-top: 10px solid #88b2b3;
+}
+/* line 794, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#theoryDetails .colRight {
+  background: #b9d5d6;
+}
+
+/* line 799, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatmentDetails {
+  background: #31402a;
+}
+/* line 802, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatmentDetails .colLeft {
+  background: #31402a;
+}
+/* line 807, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatmentDetails .colLeft ul .header {
+  background: #4f6644;
+  border-top: 10px solid #bcdcad;
+}
+/* line 814, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/styles.scss */
+#treatmentDetails .colRight {
+  background: #d2e4ca;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  /* line 1, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  .mobileOnly {
+    display: none;
+  }
+
+  /* line 5, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  .desktopOnly {
+    display: inline;
+  }
+
+  /* line 9, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  body {
+    background-image: url(../images/para768.jpg);
+  }
+
+  /* line 19, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  .mainNavTop .mainNav .navbar-nav a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* line 29, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  .allcontainer {
+    background-image: url(../images/port768.jpg);
+  }
+
+  /* line 34, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #top .textHolder {
+    text-align: right;
+    padding-right: 30px;
+  }
+  /* line 38, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #top .textHolder .bigF {
+    font-size: 65px;
+  }
+  /* line 42, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #top .textHolder .midF {
+    font-size: 32px;
+  }
+  /* line 46, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #top .textHolder .smlF {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  /* line 59, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #about .navMenu li a {
+    font-size: 22px;
+  }
+
+  /* line 71, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #theory .contentContainer .theoryContainer {
+    font-size: 18px;
+  }
+  /* line 74, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #theory .contentContainer .theoryContainer h4 {
+    font-size: 35px;
+  }
+  /* line 85, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #theory .itemSelector li a img {
+    width: 30%;
+  }
+
+  /* line 97, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break768.scss */
+  #treatments .contentContainer .boxy {
+    float: left;
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 1, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mobileOnly {
+    display: inline;
+  }
+
+  /* line 5, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .desktopOnly {
+    display: none;
+  }
+
+  /* line 9, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  body {
+    background-image: url(../images/para600.jpg);
+  }
+
+  /* line 13, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mainNavTop {
+    background: none;
+    width: 100%;
+    background: white url(../images/logo.png) top right no-repeat;
+    background-size: 200px 48px;
+  }
+  /* line 19, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mainNavTop .container {
+    width: 85px;
+    float: left;
+  }
+  /* line 24, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mainNavTop .mainNav {
+    position: relative;
+  }
+  /* line 27, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mainNavTop .mainNav ul a {
+    font-size: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #000;
+    width: 100px;
+    padding-left: 18px;
+  }
+  /* line 36, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .mainNavTop .mainNav .navbar-nav {
+    background: rgba(255, 255, 255, 0.6);
+    width: 130px;
+    padding: 5px 0;
+    position: relative;
+    top: 0px;
+    left: -9px;
+    display: none;
+  }
+
+  /* line 48, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  .allcontainer {
+    background-image: url(../images/port600.jpg);
+  }
+
+  /* line 53, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #top .textHolder {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 20px;
+  }
+  /* line 58, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #top .textHolder .bigF {
+    font-size: 57px;
+  }
+  /* line 62, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #top .textHolder .midF {
+    font-size: 27px;
+  }
+  /* line 66, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #top .textHolder .smlF {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* line 76, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #about .navMenu {
+    text-align: center;
+  }
+  /* line 82, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #about .textContainer .contentDiv {
+    font-size: 16px;
+  }
+
+  /* line 93, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #about .navMenu li a {
+    font-size: 22px;
+  }
+
+  /* line 105, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #theory .contentContainer .theoryContainer {
+    font-size: 16px;
+  }
+  /* line 108, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #theory .contentContainer .theoryContainer h4 {
+    font-size: 35px;
+  }
+  /* line 116, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #theory .itemSelector li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* line 121, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #theory .itemSelector li a img {
+    width: 45%;
+  }
+
+  /* line 130, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break600.scss */
+  #contact .contactContainers {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  /* line 1, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mobileOnly {
+    display: inline;
+  }
+
+  /* line 5, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .desktopOnly {
+    display: none;
+  }
+
+  /* line 9, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  body {
+    background-image: url(../images/para480.jpg);
+  }
+
+  /* line 13, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mainNavTop {
+    background: none;
+    width: 100%;
+    background: white url(../images/logo.png) top right no-repeat;
+    background-size: 200px 48px;
+  }
+  /* line 19, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mainNavTop .container {
+    width: 85px;
+    float: left;
+  }
+  /* line 24, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mainNavTop .mainNav {
+    position: relative;
+  }
+  /* line 27, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mainNavTop .mainNav ul a {
+    font-size: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #000;
+    width: 100px;
+    padding-left: 18px;
+  }
+  /* line 36, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .mainNavTop .mainNav .navbar-nav {
+    background: rgba(255, 255, 255, 0.6);
+    width: 130px;
+    padding: 5px 0;
+    position: relative;
+    top: 0px;
+    left: -9px;
+    display: none;
+  }
+
+  /* line 48, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  .allcontainer {
+    background-image: url(../images/port480.jpg);
+  }
+
+  /* line 53, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #top .textHolder {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 20px;
+  }
+  /* line 58, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #top .textHolder .bigF {
+    font-size: 50px;
+  }
+  /* line 62, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #top .textHolder .midF {
+    font-size: 24px;
+  }
+  /* line 66, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #top .textHolder .smlF {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  /* line 76, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #about .navMenu {
+    text-align: center;
+  }
+  /* line 80, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #about .navMenu li a {
+    font-size: 22px;
+  }
+  /* line 88, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #about .textContainer .contentDiv {
+    font-size: 16px;
+  }
+
+  /* line 99, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #theory .contentContainer .theoryContainer {
+    font-size: 15px;
+  }
+  /* line 102, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #theory .contentContainer .theoryContainer h4 {
+    font-size: 35px;
+  }
+  /* line 110, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #theory .itemSelector li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* line 115, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #theory .itemSelector li a img {
+    width: 45%;
+  }
+
+  /* line 124, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break480.scss */
+  #contact .contactContainers {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 1, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mobileOnly {
+    display: inline;
+  }
+
+  /* line 5, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .desktopOnly {
+    display: none;
+  }
+
+  /* line 9, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  body {
+    background-image: url(../images/para0.jpg);
+  }
+
+  /* line 13, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mainNavTop {
+    background: none;
+    width: 100%;
+    background: white url(../images/logo.png) top right no-repeat;
+    background-size: 200px 48px;
+  }
+  /* line 19, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mainNavTop .container {
+    width: 85px;
+    float: left;
+  }
+  /* line 24, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mainNavTop .mainNav {
+    position: relative;
+  }
+  /* line 27, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mainNavTop .mainNav ul a {
+    font-size: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #000;
+    width: 100px;
+    padding-left: 18px;
+  }
+  /* line 36, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .mainNavTop .mainNav .navbar-nav {
+    background: rgba(255, 255, 255, 0.6);
+    width: 130px;
+    padding: 5px 0;
+    position: relative;
+    top: 0px;
+    left: -9px;
+    display: none;
+  }
+
+  /* line 48, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  .allcontainer {
+    background-image: url(../images/port0.jpg);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* line 54, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top {
+    height: 650px;
+  }
+  /* line 57, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .textHolder {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 10px;
+  }
+  /* line 62, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .textHolder .bigF {
+    font-size: 35px;
+  }
+  /* line 66, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .textHolder .midF {
+    font-size: 20px;
+  }
+  /* line 70, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .textHolder .smlF {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  /* line 76, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .apptHolder {
+    height: 100%;
+  }
+  /* line 79, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .apptHolder p {
+    font-size: 12px;
+  }
+  /* line 83, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .apptHolder .apptHeader, #top .apptHolder .apptNumber {
+    font-size: 16px;
+  }
+  /* line 87, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .apptHolder .apptNumber {
+    font-size: 20px;
+  }
+  /* line 91, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #top .apptHolder .locHeader {
+    font-size: 16px;
+  }
+
+  /* line 101, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #about .navMenu {
+    text-align: center;
+  }
+  /* line 107, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #about .textContainer .contentDiv {
+    font-size: 16px;
+  }
+
+  /* line 118, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #theory .contentContainer .theoryContainer {
+    font-size: 16px;
+  }
+  /* line 121, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #theory .contentContainer .theoryContainer h4 {
+    font-size: 35px;
+  }
+  /* line 127, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #theory .itemSelector {
+    margin-top: 15px;
+  }
+
+  /* line 137, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #treatments .treatmentsRest a img {
+    width: 280px;
+  }
+
+  /* line 150, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #contact .contactInfo .socialContainer {
+    text-align: center;
+  }
+  /* line 155, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #contact .contactInfo .socialContainer a img {
+    width: 140px;
+    margin-bottom: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  /* line 172, C:/Users/loldongs/Dropbox/acuherbxia2014/sass/break0.scss */
+  #footer .rightDiv {
+    text-align: left;
+  }
+}

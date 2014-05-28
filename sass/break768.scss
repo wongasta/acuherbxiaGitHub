@@ -1,0 +1,116 @@
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+body {
+  background-image: url(../images/para768.jpg);
+}
+
+.mainNavTop {
+
+  .mainNav {
+
+    .navbar-nav {
+
+      a {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+    }
+
+  }
+}
+
+.allcontainer {
+  background-image: url(../images/port768.jpg);
+}
+
+#top {
+  .textHolder {
+    text-align: right;
+    padding-right: 30px;
+
+    .bigF {
+      font-size: 65px;
+    }
+
+    .midF {
+      font-size: 32px;
+    }
+
+    .smlF {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+  }
+
+}
+
+#about {
+  .navMenu {
+
+    li {
+
+      a {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+//Theory CSS
+#theory {
+
+  .contentContainer {
+
+    .theoryContainer {
+      font-size: 18px;;
+
+      h4 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .itemSelector {
+
+    li {
+
+      a {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+//Treatments CSS
+#treatments {
+
+  .contentContainer {
+    .boxy {
+      float: left;
+      width: 30%;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
